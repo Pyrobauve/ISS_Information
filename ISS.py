@@ -33,9 +33,16 @@ print('')
 print('------- Location -------')
 
 if location != None:
-    print("City: ", city)
-    print("State: ", state)
-    print("Country: ", country)
+    if city != "":
+        print("City: ", city)
+    if state != "":
+        print("State: ", state)
+    if country != "":
+        print("Country: ", country)
 
 else:
     print("The ISS is above the ocean.")
+
+print("")
+print(f"The coordinate is: {lat}, {lon}")
+print(f"Url: https://www.openstreetmap.org/search?query={lat}%2C%20{lon}#map=5/{lat}/{lon}")
